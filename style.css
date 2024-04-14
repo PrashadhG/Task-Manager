@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    background-color: #B8B42D;
+    color: white;
+    align-content: center;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    position: relative;
+}
+
+.stopwatch {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    width: 300px;
+    height: 92vh;
+    border-left: 1px solid #A8BCA1;
+    position: relative;
+    position: fixed;
+}
+
+#timer {
+    font-size: 50px;
+    font-family: monospace;
+    border: 4px solid #94AE89;
+    background-color: #C0DA74;
+    color: black;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    bottom: 220px
+}
+
+.timerbtn {
+    display: flex;
+    bottom: 170px;
+    position: absolute;
+    gap: 15px;
+}
+
+#startstop {
+    width: 90px;
+    height: 35px;
+    background-color: #B8B42D;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset {
+    width: 90px;
+    height: 35px;
+    background-color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #B8B42D;
+    border: 2px solid #B8B42D;
+    border-radius: 5px;
+
+}
+
+#startstop:hover {
+    background-color: #b8b32dad;
+    border: 3px solid #B8B42D;
+}
+
+#reset:hover {
+    background-color: #B8B42D;
+    color: white;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 20px;
+    width: 900px;
+    position: absolute;
+    top: 310px;
+    margin-bottom: 40px;
+
+}
+
+table,
+th,
+td {
+    height: 40px;
+    width: 970px;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+th {
+    background-color: #B8B42D;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.taskPara {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#taskNameFilter {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#filterButton {
+    width: 70px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filterButton:hover {
+    background-color: #0056b3;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    padding-left: 20px;
+    gap: 5px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    background-color: #B8B42D;
+    padding: 15px;
+    border-radius: 10px;
+}
+.inputs p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 400px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus {
+    outline: none;
+    border: 2px solid #007bff;
+}
+.input:hover{
+   background-color: #f1f7ef;
+}
+
+.names {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    margin: 5px 0px 5px 0px;
+
+}
+
+.inputs button{
+    align-self: center;
+    width: 100px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.inputs button:hover{
+    background-color: #0056b3;
+}   
+
+.deleteButton{
+    width: 70px;
+    height: 30px;
+    background-color: #B8B42D;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.deleteButton:hover{
+    background-color: #b8b32dad;
+    border: 3px solid #B8B42D;
+}

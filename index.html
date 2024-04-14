@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div class="parent">
+    <div class="header">
+        <p>Task Manager</p>
+    </div>
+    <div class="stopwatch">
+        <div id="timer">00:00:00</div>
+        <div class="timerbtn">
+            <button id="startstop" onclick="startstop()">Start</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+        <div class="table">
+            <p class="taskPara">View Your Tasks here</p>
+            <div class="filter">
+                <select id="taskNameFilter"></select>
+                <button id="filterButton">Filter</button>
+            </div>
+
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Description</th>
+                        <th>Duration</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="inputs">
+            <p>Add Task</p>
+            <div class="input-field">
+                <label class="names">Task:</label>
+                <input type="text" id="task" class="input" placeholder="Name..." />
+                <label class="names">Description:</label>
+                <input type="text" id="description" class="input" placeholder="Description..." />
+                <label class="names">Duration:</label>
+                <input type="text" id="duration" class="input" placeholder="Duration..." />
+                <button type="button" id="add">Add Task</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+
+</html>
