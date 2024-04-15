@@ -227,7 +227,7 @@ tr:nth-child(odd) {
 .deleteButton{
     width: 70px;
     height: 30px;
-    background-color: #B8B42D;
+    background-color: red;
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -236,6 +236,5 @@ tr:nth-child(odd) {
     border-radius: 5px;
 }
 .deleteButton:hover{
-    background-color: #b8b32dad;
-    border: 3px solid #B8B42D;
+    border: 3px solid rgba(255, 0, 0, 0.497);
 }
