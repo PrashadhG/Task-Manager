@@ -236,5 +236,6 @@ tr:nth-child(odd) {
     border-radius: 5px;
 }
 .deleteButton:hover{
-    border: 3px solid rgba(255, 0, 0, 0.497);
+    background-color: rgba(255, 0, 0, 0.397);
+
 }
